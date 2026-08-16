@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Student Registration Form</title>
+</head>
+<body>
+    <h1>Student Registration</h1>
+
+    <form>
+
+        <!-- Hidden field (not visible to user) -->
+        <input type="hidden" name="form_id" value="STUDENT-2026">
+
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <p>
+                <label for="fullname">Full Name *</label>
+                <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required>
+            </p>
+
+            <p>
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" placeholder="example@mail.com" required>
+            </p>
+
+            <p>
+                <label for="phone">Phone Number *</label>
+                <input type="tel" id="phone" name="phone" placeholder="03XX-XXXXXXX" required>
+            </p>
+
+            <p>
+                <label>Gender *</label>
+                <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label>
+                <input type="radio" id="other" name="gender" value="other">
+                <label for="other">Other</label>
+            </p>
+
+            <p>
+                <label for="dob">Date of Birth *</label>
+                <input type="date" id="dob" name="dob" required>
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Academic Details</legend>
+
+            <p>
+                <label for="student_id">Student ID</label>
+                <input type="number" id="student_id" name="student_id" placeholder="e.g. 123456">
+            </p>
+
+            <p>
+                <label for="enroll_month">Enrollment Month</label>
+                <input type="month" id="enroll_month" name="enroll_month">
+            </p>
+
+            <p>
+                <label for="exam_time">Exam / Class Time</label>
+                <input type="time" id="exam_time" name="exam_time">
+            </p>
+
+            <p>
+                <label for="week">Study Week</label>
+                <input type="week" id="week" name="week">
+            </p>
+
+            <p>
+                <label for="counseling">Counseling Appointment</label>
+                <input type="datetime-local" id="counseling" name="counseling">
+            </p>
+        </fieldset>
+
+        <fieldset>
+            <legend>Preferences &amp; Extras</legend>
+
+            <p>
+                <label for="skills">Skill Level (Beginner to Expert)</label>
+                <input type="range" id="skills" name="skills" min="0" max="100" value="50">
+            </p>
+
+            <p>
+                <label for="fav_color">Favorite Color</label>
+                <input type="color" id="fav_color" name="fav_color" value="#667eea">
+            </p>
+
+            <p>
+                <label for="website">Personal Website</label>
+                <input type="url" id="website" name="website" placeholder="https://example.com">
+            </p>
+
+            <p>
+                <label for="search">Search Courses</label>
+                <input type="search" id="search" name="search" placeholder="Search for a course...">
+            </p>
+
+            <p>
+                <label for="photo">Upload Profile Photo</label>
+                <input type="file" id="photo" name="photo" accept="image/*">
+            </p>
+
+            <p>
+                <label>Interests</label>
+                <input type="checkbox" id="prog" name="interests" value="programming">
+                <label for="prog">Programming</label>
+                <input type="checkbox" id="design" name="interests" value="design">
+                <label for="design">Design</label>
+                <input type="checkbox" id="data" name="interests" value="data">
+                <label for="data">Data Science</label>
+            </p>
+        </fieldset>
+
+        <p>
+            <input type="submit" value="Submit Registration">
+            <input type="reset" value="Reset Form">
+            <input type="button" value="Save Draft" onclick="alert('Draft saved!')">
+        </p>
+
+    </form>
+</body>
+</html>
